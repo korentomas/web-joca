@@ -14,7 +14,7 @@ class Banner extends React.Component {
 class SponsorCard extends React.Component {
   render() {
     return (
-      <Card className="card" id="card-sponsors">
+      <Card className="card" id="card-sumate">
         <Card.Body>
           <Card.Title className="card-title">
             Estamos buscando voluntarios

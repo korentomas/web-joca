@@ -2,11 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
 @import './custom.scss';
 
-:root {
-  --purple-cosmos-color: hsl(290, 34%, 10%);
-  --sweet-orange-color: hsl(26, 100%, 53%);
-}
-
 img {
   pointer-events: none;
   user-select: none;
@@ -14,22 +9,9 @@ img {
 
 body {
   height: 100vh;
-  background: var(--purple-cosmos-color);
+  background: #000;
   overflow: hidden;
   font-family: 'Roboto Slab', serif;
-}
-
-.nav-links {
-  color: white;
-}
-
-.nav-links:hover {
-  color: var(--sweet-orange-color);
-}
-
-.nav-links:focus {
-  color: var(--sweet-orange-color);
-  font-weight: bold;
 }
 
 .linear-wipe {
@@ -43,7 +25,6 @@ body {
 
   color: #000;
   background-clip: text;
-  text-fill-color: transparent;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 
@@ -69,15 +50,6 @@ body {
   color: white;
 }
 
-.floating {
-  width: auto;
-  animation-name: floating;
-  animation-duration: 3s;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out;
-  margin-top: 5px;
-  margin-bottom: 30px;
-}
 
 .card {
   width: 20rem;
@@ -86,65 +58,15 @@ body {
   margin-bottom: 10px;
 }
 
-#card-buy {
-  width: 25rem;
-  margin-bottom: 80px;
-}
-
-#card-sponsors {
+#card-sumate {
   margin-bottom: 40px;
 }
-
-#card-contact {
-  width: 30rem;
-}
-
-#nav {
-  width: 100%;
-  text-align: center;
-  padding: 0;
-  color: white;
-  margin-top: -12px;
-  margin-bottom: 0px;
-  font-size: 1.2em;
-
-}
-
-
-.title-empty {
-  text-align: center;
-  font-family: 'Space Grotesk', sans-serif;
-  font-size: 5em;
-  background: -webkit-linear-gradient(-86deg, #f12711 0%, #ff7d14 74%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-stroke: 0.06em transparent;
-  color: var(--purple-cosmos-color);
-  margin-bottom: 0px;
-  padding-bottom: 0px;
-  font-weight: 700;
-}
-
-@function multiple-box-shadow ($n) {
-  $value: '#{random(3000)}px #{random(3000)}px #FFF';
-
-  @for $i from 2 through $n {
-    $value: '#{$value} , #{random(3000)}px #{random(3000)}px #FFF';
-  }
-
-  @return unquote($value)
-}
-
 
 @media only screen and (min-width: 768px) {
 
   /* tablets and desktop */
   .card {
     width: 20rem;
-  }
-
-  #nav {
-    font-size: 1.5em;
   }
 
   .title-empty {
@@ -154,15 +76,12 @@ body {
 }
 
 @media only screen and (max-width: 767px) {
-  /* phones */
 
 }
 
 @media only screen and (max-width: 767px) and (orientation: portrait) {
 
-  /* portrait phones */
-
-  #card-sponsors {
+  #card-sumate {
     margin-bottom: 20px;
 
     .card {
@@ -185,15 +104,4 @@ body {
     }
   }
 
-  #main-text-row {
-    font-size: 1.4em;
-  }
-
-  #card-buy {
-    width: 16rem;
-  }
-
-  #card-contact {
-    width: 16rem;
-  }
 }
