@@ -4,8 +4,8 @@ import React from "react";
 class Banner extends React.Component {
   render() {
     return (
-      <h1 className="linear-wipe">
-        si el presente es de lucha, <br /> el futuro es nuestro
+      <h1 className="quienes-somos">
+        ¿quienes somos?
       </h1>
     );
   }
