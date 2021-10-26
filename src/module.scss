@@ -1,6 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+@font-face {
+  font-family: "Messapia-Bold";
+  src: url("https://web-joca.vercel.app/fonts/Messapia-Bold.woff2") format("woff2"),
+    url("https://web-joca.vercel.app/fonts/Messapia-Bold.woff") format("woff");
+}
+
 @import './custom.scss';
 
 img {
@@ -20,7 +27,10 @@ body {
   width: 500px;
 }
 
-.quienes-somos{}
+.quienes-somos {
+  font-family: 'Messapia-Bold';
+  color: orange;
+}
 
 .card {
   width: 20rem;
@@ -46,9 +56,7 @@ body {
 
 }
 
-@media only screen and (max-width: 767px) {
-
-}
+@media only screen and (max-width: 767px) {}
 
 @media only screen and (max-width: 767px) and (orientation: portrait) {
 
