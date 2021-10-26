@@ -8,26 +8,15 @@ class CarouselCrossfade extends React.Component {
     return (
       <Carousel fade>
         <Carousel.Item>
-          <img
-            className="d-block w-100"
-            src={photo1}
-            alt="First slide"
-          />
-          <Carousel.Caption>
-            <h3>First slide label</h3>
-            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-          </Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item>
-          <img
-            className="d-block w-100"
-            src={photo2}
-            alt="Second slide"
-          />
+          <img className="d-block w-100" src={photo2} alt="Second slide" />
 
           <Carousel.Caption>
-            <h3>Second slide label</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <h3 className="carousel-title">LA JUSTICIA CONDENÓ A SHELL</h3>
+            <p className="carousel-desc">
+              La Haya condenó a ala empresa petrolera Shell a reducir sus
+              emisiones de CO2 un 45% en menos de una década por identificarla
+              responsable de la crisis climatica.
+            </p>
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel>

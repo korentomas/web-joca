@@ -1,4 +1,3 @@
-import { Banner, SponsorCard } from "./cards";
 import { CarouselCrossfade } from "./carousel";
 
 import React from "react";
@@ -8,8 +7,7 @@ class Home extends React.Component {
     return (
       <>
         <CarouselCrossfade />
-        <Banner />
-        <SponsorCard />
+        <h1 className="quienes-somos">¿QUIÉNES SOMOS?</h1>
       </>
     );
   }
