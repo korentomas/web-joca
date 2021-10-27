@@ -17,6 +17,14 @@
 
 @import './custom.scss';
 
+* {
+  -ms-overflow-style: none;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
 img {
   pointer-events: none;
   user-select: none;
@@ -30,16 +38,26 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
-.container {
-  width: 500px;
-}
-
 .quienes-somos {
-  font-family: 'Messapia';
-  font-weight: bold;
-  color: #fe6045;
+  color: white;
   margin-top: 40px;
   text-align: center;
+
+  h1 {
+    color: #fe6045;
+    font-family: 'Messapia';
+    font-weight: bold;
+  }
+
+  h6 {
+    color: #fe6045;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+  }
+
+  h5 {
+    font-weight: bold;
+  }
 }
 
 .carousel-title {

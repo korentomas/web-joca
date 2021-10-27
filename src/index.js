@@ -30,7 +30,6 @@ function App() {
             <HeaderWithRouter />
             <Route path="/" exact component={Home} />
             <Route path="/contacto" exact component={Contact} />
-            
           </Fragment>
         </Router>
       </ScrollView>
