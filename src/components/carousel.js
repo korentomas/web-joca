@@ -8,7 +8,9 @@ class CarouselCrossfade extends React.Component {
     return (
       <Carousel fade>
         <Carousel.Item>
-          <img className="d-block w-100" src={photo2} alt="Second slide" />
+          <div className="fotocarousel">
+            <img className="d-block w-100" src={photo2} alt="Second slide" />
+          </div>
 
           <Carousel.Caption>
             <h3 className="carousel-title">LA JUSTICIA CONDENÓ A SHELL</h3>
