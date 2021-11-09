@@ -13,8 +13,19 @@ class CarouselCrossfade extends React.Component {
           </div>
 
           <Carousel.Caption>
-            <h3 className="carousel-title">LA JUSTICIA CONDENÓ A SHELL</h3>
-            <p className="carousel-desc">
+            <h4
+              className="carousel-type"
+              style={{ fontSize: "0.9em", marginBottom: "20px" }}
+            >
+              NOTICIA
+            </h4>
+            <h3 className="carousel-title" style={{ marginBottom: "20px" }}>
+              LA JUSTICIA CONDENÓ A SHELL
+            </h3>
+            <p
+              className="carousel-desc"
+              style={{ margin: "auto", width: "500px", marginBottom: "20px" }}
+            >
               La Haya condenó a ala empresa petrolera Shell a reducir sus
               emisiones de CO2 un 45% en menos de una década por identificarla
               responsable de la crisis climatica.
